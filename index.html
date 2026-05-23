@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NurCode — Веб-разработка</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="nav container">
+      <div class="logo">NurCode</div>
+      <ul class="nav-links">
+        <li><a href="#about">Туралы</a></li>
+        <li><a href="#services">Қызметтер</a></li>
+        <li><a href="#portfolio">Портфолио</a></li>
+        <li><a href="#contact">Байланыс</a></li>
+      </ul>
+      <button class="btn-primary" onclick="scrollToContact()">Тапсырыс беру</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="badge">Веб-разработка</span>
+        <h1>Сіздің бизнесіңіз үшін<br /><span class="accent">заманауи сайт</span></h1>
+        <p>Тез, әдемі және тиімді. Клиенттерді тартатын лендингтер мен корпоративтік сайттар жасаймыз.</p>
+        <div class="hero-btns">
+          <button class="btn-primary large" onclick="scrollToContact()">Тегін консультация</button>
+          <button class="btn-outline large" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">Жұмыстарды қарау</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>50+</strong><span>Жоба</span></div>
+          <div class="stat"><strong>3 жыл</strong><span>Тәжірибе</span></div>
+          <div class="stat"><strong>100%</strong><span>Клиент риза</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="browser-mockup">
+          <div class="browser-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <div class="url-bar">nurcode.kz</div>
+          </div>
+          <div class="browser-body">
+            <div class="mock-nav"></div>
+            <div class="mock-hero"></div>
+            <div class="mock-cards">
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Біз туралы</span>
+        <h2>Неге бізді таңдайды?</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Жылдам жеткізу</h3>
+          <p>Лендинг — 3 күн, корпоративтік сайт — 7 күн. Нақты мерзімдерді сақтаймыз.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Адаптивті дизайн</h3>
+          <p>Телефон, планшет, компьютер — барлық құрылғыда тамаша көрінеді.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>SEO оптимизация</h3>
+          <p>Google-да жоғары орын алу үшін сайт дұрыс баптауымен беріледі.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Техникалық қолдау</h3>
+          <p>Сайт тапсырылғаннан кейін 3 ай тегін қолдау көрсетіледі.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Қызметтер</span>
+        <h2>Не жасаймыз?</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <h3>Лендинг бет</h3>
+          <p>Бір беттік сату сайты. Өнімді немесе қызметті тиімді жарнамалауға арналған.</p>
+          <div class="service-price">бастап 50 000 ₸</div>
+        </div>
+        <div class="service-card featured">
+          <div class="service-num">02</div>
+          <h3>Корпоративтік сайт</h3>
+          <p>Компанияңыздың толық ақпараты, қызметтер, команда, байланыс беттері.</p>
+          <div class="service-price">бастап 150 000 ₸</div>
+        </div>
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <h3>Интернет-дүкен</h3>
+          <p>Онлайн сату үшін толық функционалды дүкен. Каталог, себет, төлем.</p>
+          <div class="service-price">бастап 300 000 ₸</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Портфолио</span>
+        <h2>Соңғы жұмыстар</h2>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #667eea, #764ba2);"></div>
+          <div class="portfolio-info">
+            <h4>AutoService KZ</h4>
+            <span>Корпоративтік сайт</span>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
+          <div class="portfolio-info">
+            <h4>Beauty Studio</h4>
+            <span>Лендинг бет</span>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
+          <div class="portfolio-info">
+            <h4>TechShop Online</h4>
+            <span>Интернет-дүкен</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Байланыс</span>
+        <h2>Тапсырыс беріңіз</h2>
+        <p>Тегін консультацияға жазылыңыз — 24 сағат ішінде хабарласамыз</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Атыңыз</label>
+            <input type="text" placeholder="Мысалы: Нұрмұхан" required />
+          </div>
+          <div class="form-group">
+            <label>Телефон</label>
+            <input type="tel" placeholder="+7 (777) 000-00-00" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Қандай сайт керек?</label>
+          <select>
+            <option>Лендинг бет</option>
+            <option>Корпоративтік сайт</option>
+            <option>Интернет-дүкен</option>
+            <option>Басқа</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Хабарлама</label>
+          <textarea placeholder="Жоба туралы қысқаша айтыңыз..." rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn-primary large full-width">Жіберу</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="logo">NurCode</div>
+      <p>© 2026 NurCode. Барлық құқықтар қорғалған.</p>
+      <div class="footer-links">
+        <a href="mailto:hello@nurcode.kz">hello@nurcode.kz</a>
+        <a href="tel:+77770000000">+7 777 000 00 00</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Сәтті жіберілді! Жақын арада хабарласамыз.</div>
+
+  <script src="main.js"></script>
+</body>
+</html>
